@@ -1,13 +1,19 @@
 {
-  "name": "ui-tests",
+  "name": "testirovanie-po-komanda-4",
   "version": "1.0.0",
   "private": true,
   "type": "commonjs",
   "scripts": {
-    "test": "playwright test",
+    "test": "playwright test --grep-invert @known-issue",
+    "test:ui": "playwright test --ui --grep-invert @known-issue",
+    "test:report": "playwright test --trace off",
     "report": "playwright show-report"
   },
   "devDependencies": {
-    "@playwright/test": "^1.65.1"
+    "@playwright/test": "1.65.1"
+  },
+  "description": "UI E2E оформления заказа в OWASP Juice Shop, ИТМО ПР7, команда 4",
+  "engines": {
+    "node": ">=22"
   }
 }

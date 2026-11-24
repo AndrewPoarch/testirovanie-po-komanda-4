@@ -1,0 +1,15 @@
+services:
+  juice-shop:
+    image: docker.io/bkimminich/juice-shop@sha256:adaf6a6ca50f772dff7d2fe56972c659e81a61e0dbbe607c2b39fefd436e6153
+    ports:
+      - "127.0.0.1:${JUICE_SHOP_PORT:-3000}:3000"
+    healthcheck:
+      test:
+        - CMD
+        - /nodejs/bin/node
+        - -e
+        - "fetch('http://127.0.0.1:3000/').then(r=>process.exit(r.ok?0:1)).catch(()=>process.exit(1))"
+      interval: 2s
+      timeout: 3s
+      retries: 30
+      start_period: 5s
