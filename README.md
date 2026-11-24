@@ -8,6 +8,15 @@ UI-автотесты на Playwright и JavaScript проверяют путь 
 
 [![Playwright E2E](https://github.com/AndrewPoarch/testirovanie-po-komanda-4/actions/workflows/e2e.yml/badge.svg?branch=main)](https://github.com/AndrewPoarch/testirovanie-po-komanda-4/actions/workflows/e2e.yml)
 
+## Команда
+
+| ФИО | GitHub |
+| --- | --- |
+| Елизаров Алексей Александрович | [@shredELIline](https://github.com/shredELIline) |
+| Глига Андрей Николаевич | [@AndrewPoarch](https://github.com/AndrewPoarch) |
+| Грачев Всеволод Денисович | [@capitlgdtt](https://github.com/capitlgdtt) |
+| Демидович Тимофей | [@timofeydem](https://github.com/timofeydem) |
+
 ## Что проверяем
 
 | Группа | Тесты | Проверки |
